@@ -1,0 +1,92 @@
+body {
+  font-family: 'Chicle', cursive;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+  color: var(--color-black);
+  background: var(--color-bg);
+}
+
+/* ============== VISION ============= */
+.vision__achievements {
+  margin-top: 3rem;
+}
+
+
+.vision__achievements-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5rem;
+}
+
+.vision__achievements-right>p {
+  margin: 1.6rem 0 2.5rem;
+}
+
+.achievements__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.achievement__card {
+  background: var(--color-white);
+  padding: 1.6rem;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid;
+  border-color: var(--color-black);
+}
+
+.achievement__card:hover {
+  background: var(--color-bg2);
+  transform: scale(110%);
+  transition: all 1s case;
+}
+
+
+.achievement__icon {
+  padding: 0.6rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+
+.achievement__card p {
+  margin-top: 1rem;
+}
+
+/* ==================== MEDIA QUERIES (TABLETS) ================= */
+@media screen and (max-width: 1024px) {
+  .vision__achievements {
+    margin-top: 2rem;
+  }
+
+  .vision__achievements-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .vision__achievements-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .team__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .team__member {
+    padding: 1rem;
+  }
+}
+
+/* ==================== MEDIA QUERIES (TABLETS) ================= */
+@media screen and (max-width: 600px) {
+  .achievements__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+}
